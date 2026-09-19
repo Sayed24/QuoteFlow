@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <meta
+    name="description"
+    content="AI Quote Generator — discover inspiring quotes in English and Dari/Farsi."
+  />
+
+  <!-- Modern bilingual typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Vazirmatn:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <title>QuoteFlow — AI Quote Generator</title>
+
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+  <div class="app" id="app">
+
+    <!-- ================= HEADER ================= -->
+    <header class="header">
+
+      <a href="#" class="logo">
+        <span class="logo-icon">✦</span>
+        <span>QuoteFlow</span>
+      </a>
+
+      <div class="header-actions">
+
+        <div class="language-switcher">
+          <button
+            class="language-btn active"
+            data-language="en"
+            id="englishBtn"
+          >
+            English
+          </button>
+
+          <button
+            class="language-btn"
+            data-language="fa"
+            id="persianBtn"
+          >
+            فارسی
+          </button>
+        </div>
+
+        <button
+          class="theme-btn"
+          id="themeBtn"
+          aria-label="Toggle dark mode"
+        >
+          ☾
+        </button>
+
+      </div>
+
+    </header>
+
+
+    <!-- ================= MAIN ================= -->
+    <main class="main" id="main">
+
+      <!-- Hero -->
+      <section class="hero">
+
+        <span class="eyebrow" id="eyebrow">
+          DAILY INSPIRATION
+        </span>
+
+        <h1 id="heroTitle">
+          Words that move you forward.
+        </h1>
+
+        <p id="heroDescription">
+          Discover thoughtful words in English and Dari / Farsi.
+        </p>
+
+      </section>
+
+
+      <!-- Categories -->
+      <section class="categories-section">
+
+        <div
+          class="categories"
+          id="categories"
+          aria-label="Quote categories"
+        ></div>
+
+      </section>
+
+
+      <!-- Quote -->
+      <section class="quote-card" id="quoteCard">
+
+        <div class="quote-mark">
+          “
+        </div>
+
+        <div class="quote-content">
+
+          <span
+            class="quote-category"
+            id="quoteCategory"
+          ></span>
+
+          <blockquote id="quoteText"></blockquote>
+
+          <div
+            class="quote-author"
+            id="quoteAuthor"
+          ></div>
+
+        </div>
+
+
+        <!-- Quote actions -->
+        <div class="quote-actions">
+
+          <button
+            class="action-btn"
+            id="favoriteBtn"
+          >
+            <span id="favoriteIcon">♡</span>
+            <span id="favoriteText">Save</span>
+          </button>
+
+          <button
+            class="action-btn"
+            id="copyBtn"
+          >
+            <span>⧉</span>
+            <span id="copyText">Copy</span>
+          </button>
+
+          <button
+            class="action-btn"
+            id="shareBtn"
+          >
+            <span>↗</span>
+            <span id="shareText">Share</span>
+          </button>
+
+        </div>
+
+      </section>
+
+
+      <!-- Navigation -->
+      <div class="quote-navigation">
+
+        <button
+          class="navigation-btn"
+          id="previousBtn"
+        >
+          <span id="previousArrow">←</span>
+          <span id="previousText">Previous</span>
+        </button>
+
+
+        <span
+          class="quote-counter"
+          id="quoteCounter"
+        >
+          01 / 06
+        </span>
+
+
+        <button
+          class="navigation-btn"
+          id="nextBtn"
+        >
+          <span id="nextText">Next</span>
+          <span id="nextArrow">→</span>
+        </button>
+
+      </div>
+
+
+      <!-- New quote -->
+      <button
+        class="new-quote-btn"
+        id="newQuoteBtn"
+      >
+        <span>✦</span>
+        <span id="newQuoteText">New Quote</span>
+      </button>
+
+
+      <p
+        class="keyboard-hint"
+        id="keyboardHint"
+      >
+        Tip: use ← and → to navigate
+      </p>
+
+    </main>
+
+
+    <!-- ================= FOOTER ================= -->
+    <footer class="footer">
+
+      <span>
+        © 2026 QuoteFlow
+      </span>
+
+      <span>
+        English · فارسی · دری
+      </span>
+
+    </footer>
+
+  </div>
+
+
+  <script src="script.js"></script>
+
+</body>
+</html>
